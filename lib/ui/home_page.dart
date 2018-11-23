@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-class Home extends StatelessWidget {
+import './page/login/login_page.dart';
+
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -8,7 +10,12 @@ class Home extends StatelessWidget {
         title: Text('Smart City'),
       ),
       body: Center(
-        child: Text('Hello from Smart City'),
+        child: RaisedButton(
+          onPressed: () {
+            Navigator.pushNamed(context, '/login');
+          },
+          child: Text('Login'),
+        )
       ),
       
     );

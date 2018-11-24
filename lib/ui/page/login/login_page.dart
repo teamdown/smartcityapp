@@ -30,14 +30,14 @@ class LoginPage extends StatelessWidget {
             height: 30.0,
           ),
           Text(
-            "Welcome to ${UIData.appName}",
+            "Bienvenue dans ${UIData.appName}",
             style: TextStyle(fontWeight: FontWeight.w700, color: Colors.green),
           ),
           SizedBox(
             height: 5.0,
           ),
           Text(
-            "Sign in to continue",
+            "Enregistrer vous pour continuer",
             style: TextStyle(color: Colors.grey),
           ),
         ],
@@ -53,8 +53,8 @@ class LoginPage extends StatelessWidget {
               child: TextField(
                 maxLines: 1,
                 decoration: InputDecoration(
-                  hintText: "Enter your username",
-                  labelText: "Username",
+                  hintText: "Votre Pseudo",
+                  labelText: "Pseudo",
                 ),
               ),
             ),
@@ -64,8 +64,8 @@ class LoginPage extends StatelessWidget {
                 maxLines: 1,
                 obscureText: true,
                 decoration: InputDecoration(
-                  hintText: "Enter your password",
-                  labelText: "Password",
+                  hintText: "Votre mot de passe",
+                  labelText: "Mot de passe",
                 ),
               ),
             ),
@@ -79,7 +79,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.all(12.0),
                 shape: StadiumBorder(),
                 child: Text(
-                  "SIGN IN",
+                  "Se Connecter",
                   style: TextStyle(color: Colors.white),
                 ),
                 color: Colors.green,
@@ -90,7 +90,7 @@ class LoginPage extends StatelessWidget {
               height: 5.0,
             ),
             Text(
-              "SIGN UP FOR AN ACCOUNT",
+              "S'enregistrer",
               style: TextStyle(color: Colors.grey),
             ),
           ],

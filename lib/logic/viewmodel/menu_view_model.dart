@@ -11,10 +11,10 @@ class MenuViewModel {
     return menuItems = <Menu>[
       Menu(
           title: "Login",
-          menuColor: Color(0xff050505),
+          menuColor: Colors.white,
           icon: Icons.person,
           image: UIData.profileImage,
-          items: ["Login"]),
+          link: "Login",)
     ];
   }
 }

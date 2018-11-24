@@ -10,7 +10,10 @@ class HomePage extends StatelessWidget {
   BuildContext _context;
   //menuStack
   Widget menuStack(BuildContext context, Menu menu) => InkWell(
-        onTap: () => _showModalBottomSheet(context, menu),
+        // onTap: () => _showModalBottomSheet(context, menu),
+        onTap: () {
+              Navigator.pushNamed(context, "/${menu.link}");
+        },
         splashColor: Colors.orange,
         child: Card(
           clipBehavior: Clip.antiAlias,
@@ -127,41 +130,41 @@ class HomePage extends StatelessWidget {
         });
   }
 
-  void _showModalBottomSheet(BuildContext context, Menu menu) {
-    showModalBottomSheet(
-        context: context,
-        builder: (context) => Material(
-            clipBehavior: Clip.antiAlias,
-            color: Colors.white,
-            shape: RoundedRectangleBorder(
-                borderRadius: new BorderRadius.only(
-                    topLeft: new Radius.circular(15.0),
-                    topRight: new Radius.circular(15.0))),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                Expanded(
-                  child: ListView.builder(
-                    shrinkWrap: false,
-                    itemCount: menu.items.length,
-                    itemBuilder: (context, i) => Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                          child: ListTile(
-                              title: Text(
-                                menu.items[i],
-                              ),
-                              onTap: () {
-                                Navigator.pop(context);
-                                Navigator.pushNamed(
-                                    context, "/${menu.items[i]}");
-                              }),
-                        ),
-                  ),
-                ),
-              ],
-            )));
-  }
+  // void _showModalBottomSheet(BuildContext context, Menu menu) {
+  //   showModalBottomSheet(
+  //       context: context,
+  //       builder: (context) => Material(
+  //           clipBehavior: Clip.antiAlias,
+  //           color: Colors.white,
+  //           shape: RoundedRectangleBorder(
+  //               borderRadius: new BorderRadius.only(
+  //                   topLeft: new Radius.circular(15.0),
+  //                   topRight: new Radius.circular(15.0))),
+  //           child: Column(
+  //             mainAxisAlignment: MainAxisAlignment.spaceAround,
+  //             mainAxisSize: MainAxisSize.max,
+  //             children: <Widget>[
+  //               Expanded(
+  //                 child: ListView.builder(
+  //                   shrinkWrap: false,
+  //                   itemCount: menu.items.length,
+  //                   itemBuilder: (context, i) => Padding(
+  //                         padding: const EdgeInsets.symmetric(horizontal: 10.0),
+  //                         child: ListTile(
+  //                             title: Text(
+  //                               menu.items[i],
+  //                             ),
+  //                             onTap: () {
+  //                               Navigator.pop(context);
+  //                               Navigator.pushNamed(
+  //                                   context, "/${menu.items[i]}");
+  //                             }),
+  //                       ),
+  //                 ),
+  //               ),
+  //             ],
+  //           )));
+  // }
   @override
   Widget build(BuildContext context) {
     _context = context;

@@ -35,38 +35,37 @@ class SignalPage extends StatelessWidget {
         children: [
           new SignalWidget(),
           SizedBox(
-              height: 20.0,
-            ),
-
-          Row(crossAxisAlignment: CrossAxisAlignment.start,
+            height: 20.0,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-            Container(
-              padding: EdgeInsets.only(left: 5),
-              child:
-              Text(
-                "Signaler un problème dans l'espace public",
-                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25.0),
-                textAlign: TextAlign.start,
-                //style: new TextStyle(color: Colors.black),
+              Container(
+                padding: EdgeInsets.only(left: 5),
+                child: Text(
+                  "Signaler un problème dans l'espace public",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0),
+                  textAlign: TextAlign.start,
+                  //style: new TextStyle(color: Colors.black),
                 ),
                 width: MediaQuery.of(context).size.width * 0.8,
-            ),
-
-            Padding(padding: EdgeInsets.all(2),),
-
-            Icon(
-              Icons.open_in_new,
-              color: Colors.black45,
-            ),
-            Padding(padding: EdgeInsets.all(4),),
-
-            Icon(
-              Icons.favorite_border,
-              color: Colors.black,
-            ),
-
-          ],)
-
+              ),
+              Padding(
+                padding: EdgeInsets.all(2),
+              ),
+              Icon(
+                Icons.open_in_new,
+                color: Colors.black45,
+              ),
+              Padding(
+                padding: EdgeInsets.all(4),
+              ),
+              Icon(
+                Icons.favorite_border,
+                color: Colors.black,
+              ),
+            ],
+          )
         ],
       );
 
@@ -75,7 +74,6 @@ class SignalPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            
             SizedBox(
               height: 30.0,
             ),
@@ -87,7 +85,7 @@ class SignalPage extends StatelessWidget {
                 shape: StadiumBorder(),
                 child: Text(
                   "Signaler un problème",
-                  style: TextStyle(color: Colors.white,fontSize: 18.0),
+                  style: TextStyle(color: Colors.white, fontSize: 18.0),
                 ),
                 color: Colors.green,
                 onPressed: () {},
@@ -100,9 +98,8 @@ class SignalPage extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
               child: Text(
                 "Vous constatez un éclairage défectueux, un nid de poule, de la végétation envahissante ou d'autres problèmes dans votre entourage? Signalez-nous !",
-                style: new TextStyle(color: Colors.black,fontSize: 18.0),
+                style: new TextStyle(color: Colors.black, fontSize: 18.0),
                 //textAlign: TextAlign.center
-          
               ),
             ),
           ],
@@ -110,12 +107,11 @@ class SignalPage extends StatelessWidget {
       );
 }
 
-
 class SignalWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-          var assetsImage = new AssetImage('assets/images/arbre.jpeg');
-          var image = new Image(image:assetsImage,height:240.0,fit: BoxFit.cover);
-          return new Container(child:image);
-    }
+    var assetsImage = new AssetImage('assets/images/arbre.jpeg');
+    var image = new Image(image: assetsImage, height: 240.0, fit: BoxFit.cover);
+    return new Container(child: image);
   }
+}

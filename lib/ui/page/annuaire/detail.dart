@@ -22,7 +22,6 @@ class Detail extends StatelessWidget {
       ],
     );
 
-
     ///detail of book image and it's pages
     final topLeft = Column(
       children: <Widget>[
@@ -71,12 +70,12 @@ class Detail extends StatelessWidget {
           borderRadius: BorderRadius.circular(20.0),
           shadowColor: Colors.blue.shade200,
           elevation: 5.0,
-          child: MaterialButton(
-            onPressed: () {},
-            minWidth: 160.0,
-            color: Colors.blue,
-            child: text('Bientot', color: Colors.white, size: 13),
-          ),
+          // child: MaterialButton(
+          //   onPressed: () {},
+          //   minWidth: 160.0,
+          //   color: Colors.blue,
+          //   child: text('Bientot', color: Colors.white, size: 13),
+          // ),
         )
       ],
     );
@@ -100,7 +99,7 @@ class Detail extends StatelessWidget {
         padding: EdgeInsets.all(16.0),
         child: Text(
           book.description,
-          style: TextStyle(fontSize: 13.0, height: 1.5),
+          style: TextStyle(fontSize: 18.0, height: 1.5),
         ),
       ),
     );

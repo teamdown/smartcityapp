@@ -10,21 +10,21 @@ class MenuViewModel {
   getMenuItems() {
     return menuItems = <Menu>[
       Menu(
-        title: "Fil d'actualité",
-        menuColor: Color(0xff7f5741),
-        icon: Icons.timeline,
-        image: UIData.timelineImage,
-        link: "Timeline",
+        title: "Login",
+        menuColor: Colors.white,
+        icon: Icons.person,
+        image: UIData.profileImage,
+        link: "Login",
       ),
       Menu(
-        title: "Intérêts",
+        title: "Interest",
         menuColor: Colors.white,
         icon: Icons.person,
         image: UIData.profileImage,
         link: "Tourist Reception",
       ),
       Menu(
-        title: "Evènements",
+        title: "Events",
         menuColor: Colors.white,
         icon: Icons.person,
         image: UIData.profileImage,
@@ -50,6 +50,13 @@ class MenuViewModel {
         icon: Icons.add,
         image: UIData.verifyImage,
         link: "Signal",
+      ),
+      Menu(
+        title: "News Feed",
+        menuColor: Color(0xff7f5741),
+        icon: Icons.timeline,
+        image: UIData.timelineImage,
+        link: "Timeline",
       ),
       Menu(
         title: "Recyclage",

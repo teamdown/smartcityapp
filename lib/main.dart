@@ -8,7 +8,11 @@ import './ui/page/home_page.dart';
 import './ui/page/maps/tourist_reception.dart';
 import './logic/SwipeAnimation/index.dart';
 import './ui/page/agenda/home_agenda.dart';
+import './ui/page/signal/signal_page.dart';
+import './ui/page/agenda/home_agenda.dart';
 import './ui/page/timeline/timeline_two_page.dart';
+import './ui/page/welcome/welcome_page.dart';
+import './ui/page/recycling/recycling_page.dart';
 
 void main() {
   runApp(
@@ -32,7 +36,10 @@ void main() {
       // '/Tourist Reception': (context) => TouristReception(),
       '/Tourist Reception': (context) => TouristReception(),
       '/Events': (context) => CardDemo(),
-      '/Timeline': (context) => TimelineTwoPage()
+      '/Signal': (context) => SignalPage(),
+      '/Timeline': (context) => TimelineTwoPage(),
+      '/Welcome': (context) => WelcomePage(),
+      '/Recycling': (context) => RecyclingPage(),
       // When we navigate to the "/second" route, build the SecondScreen Widget
     },
     onGenerateRoute: (settings) => generateRoute(settings),

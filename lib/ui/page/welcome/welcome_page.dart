@@ -65,7 +65,6 @@ class WelcomePage extends StatelessWidget {
         // ]),
       ),
       child: ListView(
-        shrinkWrap: false,
         children: <Widget>[alucard, welcome, lorem, pad,  button],
       ),
     );

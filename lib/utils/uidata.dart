@@ -44,6 +44,14 @@ class UIData {
   static const String shoppingImage = "$imageDir/shopping.jpeg";
   static const String timelineImage = "$imageDir/timeline.jpeg";
   static const String verifyImage = "$imageDir/verification.jpg";
+  
+  static const String diary = "$imageDir/new/diary.png";
+  static const String events = "$imageDir/new/events.png";
+  static const String interest = "$imageDir/new/interest.png";
+  static const String news = "$imageDir/new/news.png";
+  static const String notebook = "$imageDir/new/notebook.png";
+  static const String recycling = "$imageDir/new/recycling.png";
+  static const String signal = "$imageDir/new/signal.png";
 
   //login
   static const String enter_code_label = "Phone Number";

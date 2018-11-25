@@ -78,9 +78,14 @@ class HomePage extends StatelessWidget {
           ),
           title: Row(
             children: <Widget>[
-              FlutterLogo(
+              /* FlutterLogo(
                 colors: Colors.yellow,
                 textColor: Colors.white,
+              ), */
+              Icon(
+                Icons.location_city,
+                size: 50.0,
+                color: Colors.white,
               ),
               SizedBox(
                 width: 10.0,
@@ -92,6 +97,7 @@ class HomePage extends StatelessWidget {
       );
 
   //bodygrid
+  //body
   Widget bodyGrid(List<Menu> menu) => SliverGrid(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount:

@@ -8,7 +8,7 @@ class AnnuairePage extends StatelessWidget {
     //app bar
     final appBar = AppBar(
       elevation: .5,
-      title: Text('Annuaire Card'),
+      title: Text('Annuaire'),
       actions: <Widget>[
         IconButton(
           icon: Icon(Icons.search),

@@ -15,8 +15,8 @@ class Book {
 final List<Book> books = [
   Book('Association', 'Akamasoa', 'Rp 50.000', './assets/res/association.jpg',
       3.5, 123),
-  Book('Commerce', 'Widada', 'Rp 55.000', './assets/res/tananarive_ville.jpg',
-      4.5, 200),
+  Book(
+      'Commerce', 'Widada', 'Rp 55.000', './assets/res/commerce.jpg', 4.5, 200),
   Book('Enrtreprises', 'Jubilee Enterprise', 'Rp 60.000',
       './assets/res/commerce.jpg', 5.0, 324),
   Book('Horeca', 'Wahana Komputer', 'Rp 58.000',

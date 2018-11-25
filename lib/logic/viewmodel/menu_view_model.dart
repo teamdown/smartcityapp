@@ -38,7 +38,13 @@ class MenuViewModel {
           menuColor: Colors.white,
           icon: Icons.add,
           image: UIData.timelineImage,
-          link: "Agenda",)
+          link: "Agenda",),
+      Menu(
+          title: "News Feed",
+          menuColor: Color(0xff7f5741),
+          icon: Icons.timeline,
+          image: UIData.timelineImage,
+          link: "Timeline",)
     ];
   }
 }

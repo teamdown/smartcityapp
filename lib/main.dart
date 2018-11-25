@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:intia_app/ui/page/annuaire/data.dart';
 import 'package:intia_app/ui/page/annuaire/detail.dart';
 import './ui/page/annuaire/home_annuaire.dart';
-
 import './ui/page/login/login_page.dart';
 import './ui/page/home_page.dart';
 import './ui/page/maps/tourist_reception.dart';
 import './logic/SwipeAnimation/index.dart';
-
-
 import './ui/page/agenda/home_agenda.dart';
+import './ui/page/timeline/timeline_two_page.dart';
 
 void main() {
   runApp(
@@ -29,7 +27,8 @@ void main() {
       '/': (context) => HomePage(),
       // '/Tourist Reception': (context) => TouristReception(),
       '/Tourist Reception': (context) => TouristReception(),
-      '/Events': (context) => CardDemo()
+      '/Events': (context) => CardDemo(),
+      '/Timeline': (context) => TimelineTwoPage()
       // When we navigate to the "/second" route, build the SecondScreen Widget
     },
     onGenerateRoute: (settings) => generateRoute(settings),

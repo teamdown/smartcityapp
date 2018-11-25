@@ -79,7 +79,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
         height: heigth.value,
         color: const Color.fromRGBO(106, 94, 175, 1.0),
         child: new Hero(
-          tag: "img",
+          tag: "event",
           child: new Card(
             color: Colors.transparent,
             child: new Container(
@@ -208,7 +208,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                           CrossAxisAlignment.start,
                                       children: <Widget>[
                                         new Text(
-                                          "Participants",
+                                          "PARTICIPANTS",
                                           style: new TextStyle(
                                               fontWeight: FontWeight.bold),
                                         ),

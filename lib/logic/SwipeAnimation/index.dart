@@ -160,7 +160,7 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Text(
-                "EVENTS",
+                "EVENEMENTS",
                 style: new TextStyle(
                     fontSize: 12.0,
                     letterSpacing: 3.5,
@@ -211,8 +211,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                           backCardWidth, 0.0, 0.0, context);
                     }
                   }).toList())
-              : new Text("No Event Left",
-                  style: new TextStyle(color: Colors.white, fontSize: 50.0)),
+              : new Text("   Plus aucun événement",
+                  style: new TextStyle(color: Colors.white, fontSize: 30.0)), 
         )));
   }
 }

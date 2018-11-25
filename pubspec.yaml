@@ -74,6 +74,13 @@ flutter:
     - assets/rp1.jpg
     - assets/rp2.jpg
     - assets/rp3.jpg
+    - assets/images/new/diary.png
+    - assets/images/new/events.png
+    - assets/images/new/interest.png
+    - assets/images/new/news.png
+    - assets/images/new/notebook.png
+    - assets/images/new/recycling.png
+    - assets/images/new/signal.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

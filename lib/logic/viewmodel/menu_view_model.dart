@@ -45,6 +45,17 @@ class MenuViewModel {
           icon: Icons.add,
           image: UIData.verifyImage,
           link: "Signal",)
+          title: "News Feed",
+          menuColor: Color(0xff7f5741),
+          icon: Icons.timeline,
+          image: UIData.timelineImage,
+          link: "Timeline",),
+      Menu(
+          title: "Recyclage",
+          menuColor: Color(0xff7f5741),
+          icon: Icons.timeline,
+          image: UIData.timelineImage,
+          link: "Recycling",),
     ];
   }
 }

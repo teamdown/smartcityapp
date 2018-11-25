@@ -14,7 +14,20 @@ class MenuViewModel {
           menuColor: Colors.white,
           icon: Icons.person,
           image: UIData.profileImage,
-          link: "Login",)
+          link: "Login",),
+
+      Menu(
+          title: "Annuaire",
+          menuColor: Colors.white,
+          icon: Icons.nature_people,
+          image: UIData.shoppingImage,
+          link: "Annuaire",),
+      Menu(
+          title: "Agenda",
+          menuColor: Colors.white,
+          icon: Icons.add,
+          image: UIData.timelineImage,
+          link: "Agenda",)
     ];
   }
 }

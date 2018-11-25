@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "244695766041",
+    "firebase_url": "https://my-antananarivo.firebaseio.com",
+    "project_id": "my-antananarivo",
+    "storage_bucket": "my-antananarivo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244695766041:android:0884b30836bc0b70",
+        "android_client_info": {
+          "package_name": "com.example.intiaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244695766041-o6o5bg304699l3p10o7pvnq2q1klqe1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxPu76zK4UVneB6aelPVWIMcixgx9__rs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

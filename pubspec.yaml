@@ -63,6 +63,11 @@ flutter:
     - assets/img3.jpg
     - assets/img4.jpg
     - assets/img5.jpg
+    - assets/event1.jpg
+    - assets/event2.jpeg
+    - assets/event3.jpeg
+    - assets/event4.jpeg
+    - assets/event5.jpg
     - assets/avatars/avatar-1.jpg
     - assets/avatars/avatar-2.jpg
     - assets/avatars/avatar-3.jpg

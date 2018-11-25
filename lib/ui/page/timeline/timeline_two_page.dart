@@ -33,7 +33,7 @@ class TimelineTwoPageState extends State<TimelineTwoPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Icon(
-              FontAwesomeIcons.comment,
+              Icons.comment,
               size: 15.0,
               color: Colors.grey,
             ),
@@ -43,12 +43,12 @@ class TimelineTwoPageState extends State<TimelineTwoPage> {
               color: Colors.grey,
             ),
             Icon(
-              FontAwesomeIcons.heart,
+              Icons.favorite,
               size: 15.0,
               color: Colors.grey,
             ),
             Icon(
-              FontAwesomeIcons.share,
+              Icons.share,
               size: 15.0,
               color: Colors.grey,
             )
@@ -165,7 +165,7 @@ class TimelineTwoPageState extends State<TimelineTwoPage> {
       backgroundColor: Colors.grey.shade900,
       appBar: AppBar(
         centerTitle: false,
-        title: Text("Tweet"),
+        title: Text("Actualités"),
       ),
       body: bodyData(),
       drawer: CommonDrawer(),

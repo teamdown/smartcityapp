@@ -17,7 +17,11 @@ void main() {
   runApp(
   new MaterialApp(
     title: 'Smart City',
-    initialRoute: '/Welcome',
+    theme: ThemeData(
+      primaryColor: Color.fromRGBO(58, 66, 86, 1.0),
+      cardColor: Color.fromRGBO(64, 75, 96, 0.9),
+    ),
+    initialRoute: '/',
     routes: 
     {
 

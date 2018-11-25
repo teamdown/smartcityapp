@@ -40,6 +40,11 @@ class MenuViewModel {
           image: UIData.timelineImage,
           link: "Agenda",),
       Menu(
+          title: "Signal",
+          menuColor: Colors.white,
+          icon: Icons.add,
+          image: UIData.verifyImage,
+          link: "Signal",)
           title: "News Feed",
           menuColor: Color(0xff7f5741),
           icon: Icons.timeline,

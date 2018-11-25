@@ -84,7 +84,7 @@ class HomePage extends StatelessWidget {
               ), */
               Icon(
                 Icons.location_city,
-                size: 50.0,
+                size: 35.0,
                 color: Colors.white,
               ),
               SizedBox(

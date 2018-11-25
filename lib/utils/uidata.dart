@@ -23,7 +23,7 @@ class UIData {
   static const String dashboardTwoRoute = "/Dashboard 2";
 
   //strings
-  static const String appName = "Smart City";
+  static const String appName = "Tana.io";
 
   //fonts
   static const String quickFont = "Quicksand";

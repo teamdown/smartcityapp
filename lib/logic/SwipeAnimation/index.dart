@@ -211,8 +211,8 @@ class CardDemoState extends State<CardDemo> with TickerProviderStateMixin {
                           backCardWidth, 0.0, 0.0, context);
                     }
                   }).toList())
-              : new Text("Plus aucun événement",
-                  style: new TextStyle(color: Colors.white, fontSize: 50.0)),
+              : new Text("   Plus aucun événement",
+                  style: new TextStyle(color: Colors.white, fontSize: 30.0)), 
         )));
   }
 }

@@ -107,7 +107,7 @@ Positioned cardDemo(
                                           new BorderRadius.circular(60.0),
                                     ),
                                     child: new Text(
-                                      "DON'T",
+                                      "NON",
                                       style: new TextStyle(color: Colors.white),
                                     ),
                                   )),
@@ -126,7 +126,7 @@ Positioned cardDemo(
                                           new BorderRadius.circular(60.0),
                                     ),
                                     child: new Text(
-                                      "I'M IN",
+                                      "J'Y SUIS",
                                       style: new TextStyle(color: Colors.white),
                                     ),
                                   ))

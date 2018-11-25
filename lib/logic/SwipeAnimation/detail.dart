@@ -74,7 +74,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
         height: heigth.value,
         color: const Color.fromRGBO(106, 94, 175, 1.0),
         child: new Hero(
-          tag: "img",
+          tag: "event",
           child: new Card(
             color: Colors.transparent,
             child: new Container(
@@ -110,7 +110,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                             _appBarBehavior == AppBarBehavior.snapping,
                         snap: _appBarBehavior == AppBarBehavior.snapping,
                         flexibleSpace: new FlexibleSpaceBar(
-                          title: new Text("Party"),
+                          title: new Text("Wine & Cheese & Jazz"),
                           background: new Stack(
                             fit: StackFit.expand,
                             children: <Widget>[
@@ -155,7 +155,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             new Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
-                                              child: new Text("10:00  AM"),
+                                              child: new Text("7:00  PM"),
                                             )
                                           ],
                                         ),
@@ -168,7 +168,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             new Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
-                                              child: new Text("15 MILES"),
+                                              child: new Text("37"),
                                             )
                                           ],
                                         ),
@@ -179,13 +179,13 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                     padding: const EdgeInsets.only(
                                         top: 16.0, bottom: 8.0),
                                     child: new Text(
-                                      "ABOUT",
+                                      "A PROPOS",
                                       style: new TextStyle(
                                           fontWeight: FontWeight.bold),
                                     ),
                                   ),
                                   new Text(
-                                      "It's party, party, party like a nigga just got out of jail Flyin' in my 'Rari like a bat that just flew outta hell I'm from the east of ATL, but ballin' in the Cali hills Lil mama booty boomin', that bitch movin' and she standin' still I know these bitches choosin' me, but I got 80 on me still. host for the purposes of socializing, conversation, recreation, or as part of a festival or other commemoration of a special occasion. A party will typically feature food and beverages, and often music and dancing or other forms of entertainment.  "),
+                                      "Une soirée se passant au Le Louvre 313 Antaninarenina‍, le 25 Novembre 2018 à 19h, avec Sandrine RAJAOFETRA (vocal) en live et Joro RAKOTOZAFIARISON(Guitare), Rado RAMANANTSOA(Cajùn). Une ambiance à entrée libre et restauration obigatoire."),
                                   new Container(
                                     margin: new EdgeInsets.only(top: 25.0),
                                     padding: new EdgeInsets.only(
@@ -203,7 +203,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                           CrossAxisAlignment.start,
                                       children: <Widget>[
                                         new Text(
-                                          "ATTENDEES",
+                                          "PARTICIPANTS",
                                           style: new TextStyle(
                                               fontWeight: FontWeight.bold),
                                         ),
@@ -268,7 +268,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
                                 child: new Text(
-                                  "DON'T",
+                                  "NON",
                                   style: new TextStyle(color: Colors.white),
                                 ),
                               )),
@@ -284,7 +284,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
                                 child: new Text(
-                                  "I'M IN",
+                                  "J'Y SUIS",
                                   style: new TextStyle(color: Colors.white),
                                 ),
                               ))

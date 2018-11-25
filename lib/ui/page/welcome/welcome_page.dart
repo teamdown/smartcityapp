@@ -8,19 +8,29 @@ class WelcomePage extends StatelessWidget {
     final alucard = Hero(
       tag: 'hero',
       child: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: CircleAvatar(
-          radius: 72.0,
-          backgroundColor: Colors.transparent,
-          backgroundImage: AssetImage('assets/alucard.jpg'),
-        ),
-      ),
+        padding: EdgeInsets.all(50.0),
+        child:
+        FittedBox(
+          fit: BoxFit.cover,
+          child:
+          Image(image: AssetImage('assets/img-welcome.png'),
+              fit: BoxFit.cover,
+              height: 20.0,
+            )
+          ),
+        ) 
+
+        // CircleAvatar(
+        //   radius: 72.0,
+        //   backgroundColor: Colors.transparent,
+        //   backgroundImage: AssetImage('assets/img-welcome.png'),
+        // ),
     );
 
     final welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Antananarivo vous souhaite la bienvenue',
+        'Bienvenue sur Tana.io, ',
         style: TextStyle(fontSize: 32.0, color: Colors.white),
         textAlign: TextAlign.center,
       ),
@@ -29,20 +39,19 @@ class WelcomePage extends StatelessWidget {
     final lorem = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.',
+        "L'application pour bénéficier des différents aspects de Tana d'une manière numérique.",
         style: TextStyle(fontSize: 22.0, color: Colors.white),
 
       ),
     );
 
-    final button = RaisedButton(
-      onPressed: () {
-          Navigator.pushNamed(
-          context, "/");
-      },
-      color: Colors.blue,
-      child: Text('Commencer', style: TextStyle(color: Colors.white),),
-      );
+    final button = FloatingActionButton(
+                backgroundColor: Colors.blue,
+                onPressed: () {
+                  Navigator.pushNamed(context, "/");
+                  },
+                child: Icon(Icons.arrow_forward_ios),
+              );
     final pad = Padding(padding: EdgeInsets.all(16.0),);
 
     final body = Container(
@@ -55,7 +64,8 @@ class WelcomePage extends StatelessWidget {
         //   Color.fromARGB(1, 38, 38, 43),
         // ]),
       ),
-      child: Column(
+      child: ListView(
+        shrinkWrap: false,
         children: <Widget>[alucard, welcome, lorem, pad,  button],
       ),
     );

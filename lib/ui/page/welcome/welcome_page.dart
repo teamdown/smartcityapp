@@ -20,8 +20,9 @@ class WelcomePage extends StatelessWidget {
     final welcome = Padding(
       padding: EdgeInsets.all(8.0),
       child: Text(
-        'Welcome Alucard',
+        'Antananarivo vous souhaite la bienvenue',
         style: TextStyle(fontSize: 32.0, color: Colors.white),
+        textAlign: TextAlign.center,
       ),
     );
 
@@ -29,7 +30,8 @@ class WelcomePage extends StatelessWidget {
       padding: EdgeInsets.all(8.0),
       child: Text(
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit condimentum mauris id tempor. Praesent eu commodo lacus. Praesent eget mi sed libero eleifend tempor. Sed at fringilla ipsum. Duis malesuada feugiat urna vitae convallis. Aliquam eu libero arcu.',
-        style: TextStyle(fontSize: 20.0, color: Colors.white),
+        style: TextStyle(fontSize: 22.0, color: Colors.white),
+
       ),
     );
 
@@ -38,7 +40,7 @@ class WelcomePage extends StatelessWidget {
           Navigator.pushNamed(
           context, "/");
       },
-      color: Colors.blueAccent,
+      color: Colors.blue,
       child: Text('Commencer', style: TextStyle(color: Colors.white),),
       );
     final pad = Padding(padding: EdgeInsets.all(16.0),);
@@ -47,10 +49,11 @@ class WelcomePage extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: EdgeInsets.all(28.0),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [
-          Colors.blue,
-          Colors.lightBlueAccent,
-        ]),
+        color: Colors.blueGrey
+        // gradient: LinearGradient(colors: [
+        //   Colors.black,
+        //   Color.fromARGB(1, 38, 38, 43),
+        // ]),
       ),
       child: Column(
         children: <Widget>[alucard, welcome, lorem, pad,  button],

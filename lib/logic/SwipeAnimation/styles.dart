@@ -1,24 +1,28 @@
 import 'package:flutter/material.dart';
 
 DecorationImage image1 = new DecorationImage(
-  image: new ExactAssetImage('assets/img1.jpg'),
+  image: new ExactAssetImage('assets/event1.jpg'),
   fit: BoxFit.cover,
 );
 DecorationImage image2 = new DecorationImage(
-  image: new ExactAssetImage('assets/img2.jpg'),
+  image: new ExactAssetImage('assets/event2.jpeg'),
   fit: BoxFit.cover,
 );
 
 DecorationImage image3 = new DecorationImage(
-  image: new ExactAssetImage('assets/img3.jpg'),
+  image: new ExactAssetImage('assets/event3.jpeg'),
   fit: BoxFit.cover,
 );
 DecorationImage image4 = new DecorationImage(
-  image: new ExactAssetImage('assets/img4.jpg'),
+  image: new ExactAssetImage('assets/event4.jpeg'),
   fit: BoxFit.cover,
 );
 DecorationImage image5 = new DecorationImage(
-  image: new ExactAssetImage('assets/img5.jpg'),
+  image: new ExactAssetImage('assets/event5.jpg'),
+  fit: BoxFit.cover,
+);
+DecorationImage image6 = new DecorationImage(
+  image: new ExactAssetImage('assets/event6.jpg'),
   fit: BoxFit.cover,
 );
 

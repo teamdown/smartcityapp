@@ -60,9 +60,13 @@ flutter:
     - locale/i18n_hi.json
     - assets/img1.jpg
     - assets/img2.jpg
-    - assets/img3.jpg
-    - assets/img4.jpg
     - assets/img5.jpg
+    - assets/event1.jpg
+    - assets/event2.jpeg
+    - assets/event3.jpeg
+    - assets/event4.jpeg
+    - assets/event5.jpg
+    - assets/event6.jpg
     - assets/avatars/avatar-1.jpg
     - assets/avatars/avatar-2.jpg
     - assets/avatars/avatar-3.jpg
@@ -74,6 +78,13 @@ flutter:
     - assets/rp1.jpg
     - assets/rp2.jpg
     - assets/rp3.jpg
+    - assets/images/new/diary.png
+    - assets/images/new/events.png
+    - assets/images/new/interest.png
+    - assets/images/new/news.png
+    - assets/images/new/notebook.png
+    - assets/images/new/recycling.png
+    - assets/images/new/signal.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

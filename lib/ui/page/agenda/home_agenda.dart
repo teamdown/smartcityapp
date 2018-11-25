@@ -6,7 +6,7 @@ class AgendaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agenda Page'),
+        title: Text('Agenda'),
       ),
       backgroundColor: Colors.white,
       body: Center(

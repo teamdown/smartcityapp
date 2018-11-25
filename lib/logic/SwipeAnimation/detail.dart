@@ -173,7 +173,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                             new Padding(
                                               padding:
                                                   const EdgeInsets.all(8.0),
-                                              child: new Text(dist[img]),
+                                              child: new Text("${dist[img]} km"),
                                             )
                                           ],
                                         ),
@@ -273,7 +273,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
                                 child: new Text(
-                                  "DON'T",
+                                  "Non",
                                   style: new TextStyle(color: Colors.white),
                                 ),
                               )),
@@ -289,7 +289,7 @@ class _DetailPageState extends State<DetailPage> with TickerProviderStateMixin {
                                   borderRadius: new BorderRadius.circular(60.0),
                                 ),
                                 child: new Text(
-                                  "I'M IN",
+                                  "J'y vais",
                                   style: new TextStyle(color: Colors.white),
                                 ),
                               ))

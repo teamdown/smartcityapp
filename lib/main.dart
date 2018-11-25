@@ -9,7 +9,6 @@ import './ui/page/maps/tourist_reception.dart';
 import './logic/SwipeAnimation/index.dart';
 import './ui/page/agenda/home_agenda.dart';
 import './ui/page/signal/signal_page.dart';
-import './ui/page/agenda/home_agenda.dart';
 import './ui/page/timeline/timeline_two_page.dart';
 import './ui/page/welcome/welcome_page.dart';
 import './ui/page/recycling/recycling_page.dart';
@@ -18,7 +17,11 @@ void main() {
   runApp(
   new MaterialApp(
     title: 'Smart City',
-    initialRoute: '/Welcome',
+    theme: ThemeData(
+      primaryColor: Color.fromRGBO(58, 66, 86, 1.0),
+      cardColor: Color.fromRGBO(64, 75, 96, 0.9),
+    ),
+    initialRoute: '/',
     routes: 
     {
 

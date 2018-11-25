@@ -5,38 +5,68 @@ class SignalPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Center(
-        child: signalBody(),
+      appBar: topAppBar,
+      body: Container(
+        child: signalBody(context),
       ),
     );
   }
 
-  signalBody() => SingleChildScrollView(
+  final topAppBar = AppBar(
+    elevation: 0.1,
+    backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
+    title: Text('Signaler un problème'),
+    actions: <Widget>[
+      IconButton(
+        icon: Icon(Icons.list),
+        onPressed: () {},
+      )
+    ],
+  );
+
+  signalBody(context) => SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[signalHeader(), signalFields()],
+          children: <Widget>[signalHeader(context), signalFields()],
         ),
       );
 
-  signalHeader() => Column(
-
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  signalHeader(context) => Column(
         children: [
-         /*Image.asset(
-          'images/arbre.jpg',
-          height: 240.0,
-          fit: BoxFit.cover,
-        ),*/
           new SignalWidget(),
           SizedBox(
               height: 20.0,
             ),
-          Text(
-            "Signaler un problème dans l'espace public",
-            style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25.0),
-            textAlign: TextAlign.center,
-            //style: new TextStyle(color: Colors.black),
-          ),
+
+          Row(crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+            Container(
+              padding: EdgeInsets.only(left: 5),
+              child:
+              Text(
+                "Signaler un problème dans l'espace public",
+                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25.0),
+                textAlign: TextAlign.start,
+                //style: new TextStyle(color: Colors.black),
+                ),
+                width: MediaQuery.of(context).size.width * 0.8,
+            ),
+
+            Padding(padding: EdgeInsets.all(2),),
+
+            Icon(
+              Icons.open_in_new,
+              color: Colors.black45,
+            ),
+            Padding(padding: EdgeInsets.all(4),),
+
+            Icon(
+              Icons.favorite_border,
+              color: Colors.black,
+            ),
+
+          ],)
+
         ],
       );
 
@@ -69,7 +99,7 @@ class SignalPage extends StatelessWidget {
             Container(
               padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
               child: Text(
-                "Vous constatez un luminaire déffectueux, un nid de poule, de la végétation envahisssante ou autres problèmes dans un espace public?",
+                "Vous constatez un éclairage défectueux, un nid de poule, de la végétation envahissante ou d'autres problèmes dans votre entourage? Signalez-nous !",
                 style: new TextStyle(color: Colors.black,fontSize: 18.0),
                 //textAlign: TextAlign.center
           

@@ -1,11 +1,12 @@
 import 'package:intia_app/model/post.dart';
+import 'package:faker/faker.dart';
 
 class PostViewModel {
   List<Post> postItems;
 
   PostViewModel({this.postItems});
 
-  getPosts() => <Post>[
+  /* getPosts() => <Post>[
         Post(
             personName: "Pawan",
             address: "New Delhi, India",
@@ -122,5 +123,25 @@ class PostViewModel {
             personImage:
                 "https://cdn.pixabay.com/photo/2015/11/26/00/14/fashion-1063100_960_720.jpg",
             postTime: "1d ago"),
-      ];
+      ]; */
+
+  getPosts() {
+    var posts = <Post>[];
+    var faker = new Faker();
+    for (var i = 0; i < 25; i++) {
+      posts.add(Post(
+        personName: faker.person.firstName(),
+        address:
+            '${faker.address.city()} ${faker.address.streetAddress()} ${faker.address.streetName()}',
+        likesCount: random.integer(100),
+        commentsCount: random.integer(30),
+        messageImage: 'https://source.unsplash.com/random/920x760?random=${i}',
+        message:
+            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        personImage: 'http://tinygraphs.com/squares/helloworld',
+        postTime: '${faker.randomGenerator.integer(10)} h ago',
+      ));
+    }
+    return posts;
+  }
 }

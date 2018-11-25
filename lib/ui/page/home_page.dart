@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   Widget menuStack(BuildContext context, Menu menu) => InkWell(
         // onTap: () => _showModalBottomSheet(context, menu),
         onTap: () {
-              Navigator.pushNamed(context, "/${menu.link}");
+          Navigator.pushNamed(context, "/${menu.link}");
         },
         splashColor: Colors.orange,
         child: Card(
@@ -85,7 +85,7 @@ class HomePage extends StatelessWidget {
               SizedBox(
                 width: 10.0,
               ),
-              Text(UIData.appName)
+              Text(UIData.appName),
             ],
           ),
         ),
@@ -111,7 +111,10 @@ class HomePage extends StatelessWidget {
         data: Theme.of(context).copyWith(
           canvasColor: Colors.transparent,
         ),
-        child: Scaffold(key: _scaffoldState, body: bodySliverList()),
+        child: Scaffold(
+          key: _scaffoldState,
+          body: bodySliverList(),
+        ),
       );
 
   Widget bodySliverList() {

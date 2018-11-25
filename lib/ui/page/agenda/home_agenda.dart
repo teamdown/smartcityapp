@@ -1,58 +1,149 @@
 import 'package:flutter/material.dart';
-// import './../../../utils/uidata.dart';
 
 class AgendaPage extends StatelessWidget {
+  static const events = [
+    'After Beach',
+    'Tsiahy an-kira',
+    'Apéro Musical',
+    'MashManjaka AF',
+    'Wine & Cheese & Jazz'
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Agenda Page'),
+        elevation: 0.1,
+        backgroundColor: Color.fromRGBO(58, 66, 86, 1.0),
+        title: Text('Agenda'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.list),
+            onPressed: () {},
+          )
+        ],
       ),
       backgroundColor: Colors.white,
-      body: Center(
-        child: Card(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              const ListTile(
-                leading: Icon(Icons.album),
-                title: Text('The Enchanted Nightingale'),
-                subtitle: Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
-              ),
-              ButtonTheme.bar(
-                // make buttons use the appropriate styles for cards
-                child: ButtonBar(
-                  children: <Widget>[
-                    FlatButton(
-                      child: const Text('BUY TICKETS'),
-                      onPressed: () {/* ... */},
+      /* body: ListView.builder(
+        padding: EdgeInsets.symmetric(vertical: 10.0),
+        itemCount: 5,
+        itemBuilder: (BuildContext context, int i) => Container(
+          child: Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0),
+              color: Colors.grey.shade100,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.date_range),
+                    title: Text(
+                      ,
+                      style: TextStyle(
+                        color: Colors.white
+                      ),
                     ),
-                    FlatButton(
-                      child: const Text('LISTEN'),
-                      onPressed: () {/* ... */},
-                    ),
-                  ],
-                ),
+                    subtitle:
+                        Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+                  )
+                ],
               ),
-            ],
-          ),
+            ),
         )
-
-            //fin card 1
-            ,
-        // child: loginBody(),
-      ),
-      bottomNavigationBar: BottomAppBar(
-        child: Container(
-          height: 50.0,
-        ),
+      ), */
+      body: ListView(
+        children: <Widget>[
+          Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0),
+              color: Colors.grey.shade100,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.date_range),
+                    title: Text(
+                      "After Beach - Bar Naka'h"
+                    ),
+                    subtitle:
+                        Text('Le 25 novembre 2018 à 12:00 '),
+                  )
+                ],
+              ),
+            ),
+          Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0),
+              color: Colors.grey.shade100,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.date_range),
+                    title: Text(
+                      "Tsiahy an-kira"
+                    ),
+                    subtitle:
+                        Text('Le 25 novembre 2018 à 15:00 '),
+                  )
+                ],
+              ),
+            ),
+          Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0),
+              color: Colors.grey.shade100,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.date_range),
+                    title: Text(
+                      "Apéro musical",
+                    ),
+                    subtitle:
+                        Text('Le 30 novembre 2018 à 19:00 '),
+                  )
+                ],
+              ),
+            ),
+          Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0),
+              color: Colors.grey.shade100,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.date_range),
+                    title: Text(
+                      "Wine & Cheese & Jazz"
+                    ),
+                    subtitle:
+                        Text('Le 30 novembre 2018 à 19:00 '),
+                  )
+                ],
+              ),
+            ),
+          Card(
+              margin: EdgeInsets.symmetric(vertical: 5.0),
+              color: Colors.grey.shade100,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.date_range),
+                    title: Text(
+                      "Revy Rebika Cabane Lounge Bar Karaoke Andavamamba"
+                    ),
+                    subtitle:
+                        Text('Le 30 novembre 2018 à 20:00  '),
+                  )
+                ],
+              ),
+            ),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: null,
         tooltip: 'Increment',
         child: Icon(Icons.add),
+        backgroundColor: Theme.of(context).primaryColor,
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

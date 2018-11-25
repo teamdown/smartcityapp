@@ -17,6 +17,7 @@ dependencies:
     sdk: flutter
   firebase_core: ^0.2.5
   firebase_messaging: ^1.0.4
+  faker: ^1.0.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -68,6 +69,11 @@ flutter:
     - assets/avatars/avatar-4.jpg
     - assets/avatars/avatar-5.jpg
     - assets/avatars/avatar-6.jpg
+    - assets/logo.png
+    - assets/alucard.jpg
+    - assets/rp1.jpg
+    - assets/rp2.jpg
+    - assets/rp3.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

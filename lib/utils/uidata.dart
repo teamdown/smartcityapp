@@ -10,7 +10,7 @@ class UIData {
   static const String profileTwoRoute = "/Profile 2";
   static const String notFoundRoute = "/No Search Result";
   static const String timelineOneRoute = "/Feed";
-  static const String timelineTwoRoute = "/Tweets";
+  static const String timelineTwoRoute = "/Fil d'actualité";
   static const String settingsOneRoute = "/Device Settings";
   static const String shoppingOneRoute = "/Shopping List";
   static const String shoppingTwoRoute = "/Shopping Details";

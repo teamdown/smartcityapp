@@ -1,5 +1,6 @@
 import 'package:intia_app/ui/page/annuaire/data.dart';
 import 'package:flutter/material.dart';
+import './data.dart';
 
 class AnnuairePage extends StatelessWidget {
   @override
@@ -21,7 +22,7 @@ class AnnuairePage extends StatelessWidget {
           tag: book.title,
           child: Material(
             elevation: 15.0,
-            shadowColor: Colors.yellow.shade900,
+            shadowColor: Colors.blue.shade900,
             child: InkWell(
               onTap: () {
                 Navigator.pushNamed(context, 'detail/${book.title}');
@@ -39,12 +40,12 @@ class AnnuairePage extends StatelessWidget {
       primary: false,
       slivers: <Widget>[
         SliverPadding(
-          padding: EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(10.0),
           sliver: SliverGrid.count(
-            childAspectRatio: 2 / 3,
-            crossAxisCount: 3,
-            mainAxisSpacing: 20.0,
-            crossAxisSpacing: 20.0,
+            childAspectRatio: 2 / 2,
+            crossAxisCount: 2,
+            mainAxisSpacing: 10.0,
+            crossAxisSpacing: 10.0,
             children: books.map((book) => createTile(book)).toList(),
           ),
         )
@@ -52,7 +53,7 @@ class AnnuairePage extends StatelessWidget {
     );
 
     return Scaffold(
-      backgroundColor: Theme.of(context).primaryColor,
+      // backgroundColor: Theme.of(context).primaryColor,
       appBar: appBar,
       body: grid,
     );

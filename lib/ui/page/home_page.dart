@@ -37,12 +37,14 @@ class HomePage extends StatelessWidget {
 
   //stack 2/3
   Widget menuColor() => new Container(
-        decoration: BoxDecoration(boxShadow: <BoxShadow>[
-          BoxShadow(
-            color: Colors.black.withOpacity(0.8),
-            blurRadius: 5.0,
-          ),
-        ]),
+        decoration: BoxDecoration(
+          boxShadow: <BoxShadow>[
+            BoxShadow(
+              color: Colors.black54,
+              blurRadius: 5.0,
+            ),
+          ],
+        ),
       );
 
   //stack 3/3
@@ -52,13 +54,18 @@ class HomePage extends StatelessWidget {
           Icon(
             menu.icon,
             color: Colors.white,
+            size: 35.0,
           ),
           SizedBox(
             height: 10.0,
           ),
           Text(
             menu.title,
-            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              fontSize: 15.0
+            ),
           )
         ],
       );

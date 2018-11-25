@@ -168,7 +168,6 @@ class TimelineTwoPageState extends State<TimelineTwoPage> {
         title: Text("Actualités"),
       ),
       body: bodyData(),
-      drawer: CommonDrawer(),
       floatingActionButton: StreamBuilder<bool>(
         stream: postBloc.fabVisible,
         initialData: true,
@@ -176,7 +175,7 @@ class TimelineTwoPageState extends State<TimelineTwoPage> {
               opacity: snapshot.data ? 1.0 : 0.0,
               child: FloatingActionButton(
                 onPressed: () {},
-                backgroundColor: Colors.white,
+                backgroundColor: Colors.blueGrey,
                 child: Icon(
                   Icons.add,
                 ),

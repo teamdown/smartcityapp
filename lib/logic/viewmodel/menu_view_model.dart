@@ -38,7 +38,13 @@ class MenuViewModel {
           menuColor: Colors.white,
           icon: Icons.add,
           image: UIData.timelineImage,
-          link: "Agenda",)
+          link: "Agenda",),
+      Menu(
+          title: "Signal",
+          menuColor: Colors.white,
+          icon: Icons.add,
+          image: UIData.verifyImage,
+          link: "Signal",)
     ];
   }
 }

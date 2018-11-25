@@ -55,7 +55,7 @@ class WelcomePage extends StatelessWidget {
         //   Color.fromARGB(1, 38, 38, 43),
         // ]),
       ),
-      child: Column(
+      child: ListView(
         children: <Widget>[alucard, welcome, lorem, pad,  button],
       ),
     );
